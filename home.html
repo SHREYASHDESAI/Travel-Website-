@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="C:\Users\dell\Desktop\Project\style.css">
+    <style>
+        /* Style for search bar container */
+        .search-bar-container {
+            width: 500px; /* Adjusted width */
+            margin: 20px auto;
+            text-align: center;
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        /* Style for search bar */
+        .search-bar {
+            flex: 1; /* Allow search bar to grow */
+            margin-right: 10px; /* Add some spacing between search bar and dropdown */
+        }
+        .search-bar input[type="text"] {
+            width: calc(100% - 100px); /* Adjusted width to accommodate button */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+        .search-bar input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        /* Style for dropdown */
+        #searchSelect {
+            width: 130px; /* Increased width of dropdown button */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 46px; /* Adjusted height */
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner_home">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="Contact.html">CONTACT US</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">SIGN UP</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Welcome to Our Website</h1>
+            <!-- Search bar container -->
+            <div class="search-bar-container">
+                <!-- Search bar -->
+                <div class="search-bar">
+                    <form id="searchForm" action="#" method="GET">
+                        <input type="text" id="searchInput" placeholder="Search..." name="search">
+                        <input type="submit" value="Go">
+                    </form>
+                </div>
+                <!-- Dropdown menu -->
+                <select id="searchSelect">
+                    <option value="" disabled selected>Select Page</option>
+                    <option value="index.html">INDEX</option>
+                    <option value="home.html">HOME</option>
+                    <option value="Contact.html">CONTACT US</option>
+                    <option value="About.html">ABOUT US</option>
+                    <!-- Add more options for other pages -->
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for handling form submission -->
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            var searchInput = document.getElementById("searchInput").value.trim();
+            var selectedPage = document.getElementById("searchSelect").value;
+            if (searchInput !== "" && selectedPage !== "") {
+                window.location.href = selectedPage + "?search=" + encodeURIComponent(searchInput);
+            }
+        });
+
+        // JavaScript for handling dropdown menu selection
+        document.getElementById("searchSelect").addEventListener("change", function() {
+            var selectedPage = this.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        });
+    </script>
+</body>
+</html>
