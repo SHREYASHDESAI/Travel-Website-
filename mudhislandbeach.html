@@ -17,9 +17,56 @@
         }
         .image-container img:last-child {
             margin-left: 50px;
-            margin-top: 200px; /* Add margin to the top of the second image */
+            margin-top: 100px; /* Add margin to the top of the second image */
         }
-        
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
         .video-container {
             width: 100%;
             max-width: 800px; /* Adjust the maximum width as needed */
@@ -32,10 +79,43 @@
             width: 100%;
             height: auto;
         }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
 
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
         .text-container {
-            margin-right: 5px; /* Add margin to the right of the text */
-            margin-left: 50px; 
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
         }
     </style>
 </head>
@@ -50,28 +130,48 @@
     </style>
 
     <!-- Container for centered image -->
-    <div class="centered-image-container">
-        <img src="mudh-island-beach-image1.jpg" alt="Centered Image" width="1000" height="200" style="display: block; margin: 0 auto;">
+    <div class="title">
+        <h1>MADH ISLAND Beach</h1>
     </div>
-
-    <h3 style="color:rgb(13, 13, 13);"><center>Mudh Island, situated off the coast of Mumbai, India, offers a serene escape from the hustle and bustle of the city. While not as well-known as some of Mumbai's other beaches, Mudh Island Beach attracts visitors seeking tranquility and natural beauty. With its relatively secluded location, the beach provides a peaceful atmosphere, making it an ideal spot for relaxation and quiet contemplation.
-
-Unlike some of the more popular beaches in Mumbai, Mudh Island Beach is not typically crowded, offering visitors ample space to unwind and enjoy the sound of waves crashing against the shore. The beach features soft golden sands stretching along the coastline, inviting visitors to take leisurely walks or simply lounge by the water's edge.
-
-While swimming may not be advisable due to strong currents and other safety concerns, Mudh Island Beach offers opportunities for sunbathing, picnicking, and enjoying the scenic views of the Arabian Sea. Visitors can also indulge in beachcombing, exploring the shoreline for shells and other natural treasures washed ashore by the waves.
-
-One of the highlights of visiting Mudh Island Beach is its stunning sunsets. As the day draws to a close, the sky comes alive with vibrant hues of orange and pink, casting a mesmerizing glow over the tranquil waters. Watching the sunset from Mudh Island Beach is a magical experience and a perfect way to end the day.
-
-While amenities such as food stalls and recreational activities may be limited compared to more developed beaches, Mudh Island Beach offers a peaceful retreat where visitors can reconnect with nature and enjoy the simple pleasures of a seaside escape. Whether seeking solitude or a quiet spot to enjoy quality time with loved ones, Mudh Island Beach provides a serene oasis amid the bustling cityscape of Mumbai.</center></h3>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Situated off the coast of Mumbai, India, in the Arabian Sea.</li>
+                    <li><strong>Accessibility:</strong> Accessible primarily by boat or ferry from Mumbai. No bridges connect it to the mainland.</li>
+                    <li><strong>Scenic Beauty:</strong> Offers stunning views of the Mumbai skyline and the Arabian Sea.</li>
+                    <li><strong>Serenity:</strong> Relatively less crowded compared to other beaches in Mumbai, providing a peaceful getaway.</li>
+                    <li><strong>Water Sports:</strong> Activities include swimming, jet skiing, banana boat rides, and parasailing.</li>
+                    <li><strong>Fishing:</strong> Common activity for both locals and tourists, with opportunities for shore fishing or hiring local fishermen.</li>
+                    <li><strong>Relaxation:</strong> Soft sands perfect for sunbathing and picnics.</li>
+                    <li><strong>Sunset Views:</strong> Breathtaking sunset views over the Arabian Sea in the evenings.</li>
+                    <li><strong>Local Cuisine:</strong> Nearby shacks and eateries offer fresh seafood and local delicacies.</li>
+                    <li><strong>Conservation:</strong> Efforts underway to preserve the natural beauty and ecosystem through clean-up drives and awareness campaigns.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="mudh-island-beach-image2.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
     <!-- Container for images and text -->
     <div class="image-container">
         <!-- First Image with Image Mapping -->
-        <img src="mudh-island-beach-image2.jpg" alt="Juhu Beach" width="400" height="250" usemap="#image-map">
-        <map name="image-map">
-            <!-- Define image mapping areas -->
-            <area shape="rect" coords="0,0,400,300" href="" alt="Juhu Sports">
-        </map>
-        
+        <div class="imag-map">
+            <img src="mudh-island-beach-image1.jpg" alt="Mudh Island Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.seawatersports.com/places/maharashtra/madh-island-in-maharashtra" alt="Chowpatty Sports">
+            </map>
+        </div>
         <!-- Text Container -->
         <div class="text-container">
             <center>
@@ -92,7 +192,7 @@ While amenities such as food stalls and recreational activities may be limited c
         </div>
         
         <!-- Second Image -->
-        <img src="mudh-island-beach-image3.jpg" alt="Second Image" width="400" height="300">
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15076.272840175618!2d72.7891606!3d19.1484913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b5cf37c40c15%3A0xbd1dd2421241e25d!2sMadh%20Island!5e0!3m2!1sen!2sin!4v1711689957979!5m2!1sen!2sin"></iframe>
     </div>
 
     <!-- Video Container -->
