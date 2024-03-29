@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARIHARESHWAR BEACH</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('harihareshwarbeachbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Harihareshwar Beach</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Harihareshwar Beach is situated in the Harihareshwar region of Maharashtra, India, along the Konkan coastline.</li>
+                    <li><strong>Accessibility:</strong> Easily accessible by road from major cities in Maharashtra, with the nearest railway station being at Mangaon.</li>
+                    <li><strong>Attractions:</strong> Known for its pristine sandy shores, gentle sea waves, and tranquil ambiance, offering a perfect retreat for beach lovers and pilgrims alike.</li>
+                    <li><strong>Harihareshwar Temple:</strong> Adjacent to the beach is the revered Harihareshwar Temple, dedicated to Lord Shiva, Lord Vishnu, and Lord Brahma, attracting devotees from far and wide.</li>
+                    <li><strong>Scenic Beauty:</strong> Surrounded by lush green hills, coconut palms, and casuarina trees, providing a picturesque setting for relaxation, photography, and nature walks.</li>
+                    <li><strong>Pilgrimage Destination:</strong> Considered as one of the Panch Kashi temples, Harihareshwar is a significant pilgrimage site for Hindus, offering spiritual solace and divine blessings.</li>
+                    <li><strong>Water Sports:</strong> Offers opportunities for water sports activities such as swimming, banana boat rides, and speed boating, providing thrilling experiences for adventure enthusiasts.</li>
+                    <li><strong>Nearby Attractions:</strong> Explore nearby attractions such as Shrivardhan Beach, Bagmandala, Bankot Fort, and Velas Beach for a complete coastal experience and exploration of scenic landscapes.</li>
+                    <li><strong>Local Cuisine:</strong> Indulge in delicious Konkani cuisine and fresh seafood delicacies at the beachside shacks and eateries, offering a taste of authentic coastal flavors.</li>
+                    <li><strong>Accommodation:</strong> Various accommodation options are available near Harihareshwar Beach, including beach resorts, cottages, and guesthouses, offering comfortable stays with modern amenities.</li>
+                    <li><strong>Festivals:</strong> Witness vibrant festivals such as Shivaratri and Kartik Ekadashi celebrated with great fervor at Harihareshwar Temple, featuring religious rituals, cultural performances, and colorful processions.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="harihareshwarbeach-1.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="harihareshwarbeach-2.jpg" alt="Harihareshwar Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.thrillophilia.com/watersports-in-alibaug" alt="Harihareshwar Sports">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                    <li><strong>Harihareshwar Temple:</strong> A revered Hindu temple dedicated to Lord Shiva, situated near Harihareshwar Beach, known for its spiritual significance, ancient architecture, and scenic location overlooking the Arabian Sea.</li>
+                    <li><strong>Shrivardhan Beach:</strong> A picturesque beach destination located near Harihareshwar, known for its golden sands, clear blue waters, and tranquil ambiance, ideal for swimming, sunbathing, and beach activities.</li>
+                    <li><strong>Bankot Fort:</strong> A historic sea fort situated near Harihareshwar Beach, built during the Maratha Empire, offering panoramic views of the coastline and surrounding landscapes, providing insights into the region's maritime history.</li>
+                    <li><strong>Kelshi Beach:</strong> A serene beach located near Harihareshwar, characterized by its pristine shoreline, gentle sea waves, and scenic beauty, perfect for relaxation and leisurely walks along the shore.</li>
+                    <li><strong>Bagmandala:</strong> A scenic village situated near Harihareshwar Beach, known for its lush greenery, coconut groves, and serene backwaters, offering a tranquil retreat amidst nature.</li>
+                    <li><strong>Shri Laxminarayan Temple:</strong> A historic temple dedicated to Lord Vishnu and Goddess Lakshmi, located in Bagmandala village near Harihareshwar, known for its architectural beauty and religious significance.</li>
+                    <li><strong>Velas Beach:</strong> A pristine beach destination near Harihareshwar, famous for its turtle conservation efforts and turtle hatching festival held annually, providing opportunities for eco-tourism and wildlife observation.</li>
+                    <li><strong>Anjarle Beach:</strong> A secluded beach located near Harihareshwar, known for its natural beauty, tranquil surroundings, and popular attractions such as the Kadyavarcha Ganpati Temple and Suvarnadurg Fort.</li>
+                    <li><strong>Amboli Waterfall:</strong> A scenic waterfall located near Harihareshwar, surrounded by lush green forests and rocky cliffs, offering a refreshing retreat and opportunities for trekking and nature walks.</li>
+                    <li><strong>Murud Beach:</strong> A popular beach destination near Harihareshwar, known for its soft sands, clear waters, and water sports activities such as jet skiing, banana boat rides, and parasailing, providing exciting experiences for visitors.</li>
+                </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15178.022524014455!2d73.01686140000001!3d18.001723149999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be9b48cab278b39%3A0x2f638ca07eba2754!2sHarihareshwar%20Beach!5e0!3m2!1sen!2sin!4v1711730715252!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="harihareshwarbeachvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
