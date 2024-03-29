@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALVAN BEACH</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('malvanbeachbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Malvan Beach</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Malvan Beach is situated in the Malvan region of Maharashtra, India, along the Konkan coastline.</li>
+                    <li><strong>Accessibility:</strong> Easily accessible by road from major cities in Maharashtra, with the nearest railway station being at Kudal.</li>
+                    <li><strong>Attractions:</strong> Known for its pristine sandy shores, clear turquoise waters, and tranquil atmosphere.</li>
+                    <li><strong>Water Sports:</strong> Offers a range of water sports activities such as snorkeling, scuba diving, parasailing, and jet skiing.</li>
+                    <li><strong>Sindhudurg Fort:</strong> Nearby attraction, an ancient sea fortress built by Chhatrapati Shivaji Maharaj, offering historical significance and panoramic views.</li>
+                    <li><strong>Malvani Cuisine:</strong> Indulge in delicious Malvani cuisine, known for its fresh seafood delicacies such as bombil fry, crab curry, and sol kadhi.</li>
+                    <li><strong>Scenic Beauty:</strong> Surrounded by lush greenery, coconut groves, and casuarina plantations, providing a picturesque setting for relaxation and leisure.</li>
+                    <li><strong>Fishing Village:</strong> Adjacent to the beach is a traditional fishing village, offering insights into the local fishing community's way of life.</li>
+                    <li><strong>Cultural Heritage:</strong> Experience the rich cultural heritage of Malvan through its traditional music, dance, festivals, and historical landmarks.</li>
+                    <li><strong>Accommodation:</strong> Various accommodation options are available near Malvan Beach, including beach resorts, homestays, and guesthouses, offering comfortable stays for visitors.</li>
+                    <li><strong>Nearby Attractions:</strong> Explore nearby attractions such as Devbagh Beach, Chivla Beach, Rock Garden, and Tsunami Island for a complete coastal experience.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="malvanbeach-2.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="malvanbeach-1.jpg" alt="Malvan Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.thrillophilia.com/cities/malvan/tags/water-sports" alt="Malvan Sports">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                    <li><strong>Sindhudurg Fort:</strong> An ancient sea fortress built by Chhatrapati Shivaji Maharaj, located on an island near Malvan, offering panoramic views of the Arabian Sea.</li>
+                    <li><strong>Tarkarli Beach:</strong> Known for its pristine white sandy beach, clear turquoise waters, and water sports activities such as snorkeling and scuba diving.</li>
+                    <li><strong>Devbagh Beach:</strong> A serene and secluded beach located near Tarkarli, offering water sports activities and picturesque views of the sunset.</li>
+                    <li><strong>Rock Garden, Malvan:</strong> A unique garden adorned with sculptures and rock formations, offering a serene ambiance for relaxation and photography.</li>
+                    <li><strong>Chivla Beach:</strong> A peaceful beach destination near Malvan, ideal for swimming, sunbathing, and enjoying leisurely walks along the shore.</li>
+                    <li><strong>Kunkeshwar Temple:</strong> A beautiful temple dedicated to Lord Shiva, located in Kunkeshwar village near Malvan Beach, known for its architectural grandeur and religious significance.</li>
+                    <li><strong>Malvan Jetty:</strong> A bustling jetty area where visitors can enjoy boat rides, dolphin spotting tours, and fishing excursions.</li>
+                    <li><strong>Tsunami Island:</strong> A small island located near Tarkarli Beach, offering water sports activities, boat rides, and a picturesque setting for relaxation.</li>
+                    <li><strong>Vengurla:</strong> A coastal town famous for its stunning beaches, lush greenery, and historical temples, located a short distance from Malvan.</li>
+                    <li><strong>Padmagarh Fort:</strong> A historical fort located near Tarkarli Beach, known for its strategic location and panoramic views of the surrounding landscape.</li>
+                </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7668.542539103317!2d73.46363955!3d16.05140695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc002a74f55954b%3A0xe6b75a93017dfd7c!2sMalvan%20Beach!5e0!3m2!1sen!2sin!4v1711702183146!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="malvanbeachvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
