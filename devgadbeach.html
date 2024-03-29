@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVGAD BEACH</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('devgadbeachbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Devgad Beach</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Devgad Beach is situated in the Devgad region of Maharashtra, India, along the Konkan coastline.</li>
+                    <li><strong>Accessibility:</strong> Easily accessible by road from major cities in Maharashtra, with the nearest railway station being at Kankavli.</li>
+                    <li><strong>Attractions:</strong> Known for its pristine sandy shores, clear blue waters, and tranquil atmosphere, offering a perfect retreat for beach lovers.</li>
+                    <li><strong>Scenic Beauty:</strong> Surrounded by coconut palms, casuarina trees, and lush greenery, providing a picturesque setting for relaxation and nature walks.</li>
+                    <li><strong>Fishing Activities:</strong> The beach is a hub for fishing activities, allowing visitors to witness the traditional fishing techniques practiced by the local fishing community.</li>
+                    <li><strong>Water Sports:</strong> Offers a range of water sports activities such as swimming, snorkeling, and boat rides, providing thrilling experiences for adventure enthusiasts.</li>
+                    <li><strong>Devgad Fort:</strong> Nearby attraction, an ancient sea fort built during the Maratha Empire, offering historical significance and panoramic views of the Arabian Sea.</li>
+                    <li><strong>Local Cuisine:</strong> Indulge in delicious seafood delicacies such as fresh fish curry, prawn masala, and crab fry at the local eateries near Devgad Beach.</li>
+                    <li><strong>Cultural Heritage:</strong> Experience the rich cultural heritage of the region through its traditional music, dance, and festivals celebrated by the local community.</li>
+                    <li><strong>Nature Trails:</strong> Explore nearby nature trails and trekking routes that lead to scenic viewpoints offering panoramic views of the coastline and surrounding landscapes.</li>
+                    <li><strong>Accommodation:</strong> Various accommodation options are available near Devgad Beach, including beach resorts, homestays, and guesthouses, offering comfortable stays for visitors.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="devgadbeach-1.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="devgadbeach-2.jpg" alt="Devgad Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.seawatersports.com/activities/devgad-zipline" alt="Devgad Sports">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                    <li><strong>Sindhudurg Fort:</strong> A historic sea fortress located near Devgad Beach, built by Chhatrapati Shivaji Maharaj, offering panoramic views of the Arabian Sea and surrounding landscapes.</li>
+                    <li><strong>Kunkeshwar Temple:</strong> A revered temple dedicated to Lord Shiva, located in Kunkeshwar village near Devgad, known for its architectural grandeur and religious significance.</li>
+                    <li><strong>Achara Beach:</strong> A serene and less crowded beach destination near Devgad, ideal for swimming, sunbathing, and enjoying leisurely walks along the shore.</li>
+                    <li><strong>Vijaydurg Fort:</strong> A majestic sea fort located near Devgad, known for its strategic location and historical significance during the Maratha Empire, offering insights into the region's maritime history.</li>
+                    <li><strong>Tambaldeg Beach:</strong> A secluded beach located near Devgad, characterized by its pristine shoreline, clear blue waters, and tranquil ambiance, perfect for a peaceful retreat.</li>
+                    <li><strong>Malvan:</strong> A nearby town known for its historical landmarks, delicious Malvani cuisine, and vibrant culture, offering various attractions and amenities for visitors.</li>
+                    <li><strong>Rock Garden, Malvan:</strong> A unique garden adorned with sculptures and rock formations, offering a serene ambiance for relaxation and photography, located near Devgad.</li>
+                    <li><strong>Devgad Lighthouse:</strong> A prominent landmark near Devgad Beach, offering panoramic views of the coastline and Arabian Sea from its vantage point, providing a memorable experience for visitors.</li>
+                    <li><strong>Kalavli Beach:</strong> A hidden gem near Devgad, known for its natural beauty, golden sands, and tranquil surroundings, ideal for nature lovers and solitude seekers.</li>
+                    <li><strong>Kankavli:</strong> A nearby town known for its cultural heritage, educational institutions, and bustling markets, offering various amenities and attractions for visitors.</li>
+                </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.006738189882!2d73.3713693!3d16.37361915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bea9c78ae96eeb3%3A0x713e47cf963d1ad4!2sDevgad%20Beach!5e0!3m2!1sen!2sin!4v1711723851126!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="devgadbeachvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
