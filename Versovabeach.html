@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERSOVA BEACH</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('Versova_beach_bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Versova Beach</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Versova Beach is situated in Versova, Mumbai, India, along the Arabian Sea coastline.</li>
+                    <li><strong>Accessibility:</strong> Easily accessible by road and public transportation from various parts of Mumbai.</li>
+                    <li><strong>Attractions:</strong> Known for its sandy shores, scenic views, and tranquil atmosphere.</li>
+                    <li><strong>Activities:</strong> Offers a range of activities such as leisurely walks, picnics, and enjoying the sunset.</li>
+                    <li><strong>Clean-Up Initiatives:</strong> Famed for the Versova Beach clean-up project led by activist Afroz Shah, resulting in the restoration of the beach's beauty and ecosystem.</li>
+                    <li><strong>Fishing Village:</strong> Adjacent to the beach is a traditional fishing village, providing a glimpse into the local fishing community's way of life.</li>
+                    <li><strong>Seafood:</strong> Visitors can indulge in fresh seafood at nearby eateries, offering a variety of delicious dishes.</li>
+                    <li><strong>Bird Watching:</strong> A haven for bird watchers, with opportunities to spot various bird species, especially during migratory seasons.</li>
+                    <li><strong>Social Events:</strong> Occasionally hosts social events, cultural programs, and beach clean-up drives, attracting locals and tourists alike.</li>
+                    <li><strong>Safety Measures:</strong> Patrolled by authorities to ensure the safety of visitors, especially during peak hours.</li>
+                    <li><strong>Environmental Awareness:</strong> Serves as a symbol of environmental activism and community participation in preserving natural resources.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="versova-beach-2.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="versova-beach-1.jpg" alt="Mudh Island Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.seawatersports.com/places/maharashtra/versova-beach-in-maharashtra" alt="Chowpatty Sports">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                        <li><strong>Marine Drive:</strong> A picturesque promenade located along the Arabian Sea, famous for its stunning views and relaxing atmosphere.</li>
+                        <li><strong>Gateway of India:</strong> An iconic monument and historical landmark situated at the waterfront in South Mumbai.</li>
+                        <li><strong>Haji Ali Dargah:</strong> A revered mosque and tomb located on an islet off the coast of Worli, accessible via a causeway.</li>
+                        <li><strong>Nariman Point:</strong> A prominent business district and upscale area in South Mumbai, known for its skyscrapers and seafront promenade.</li>
+                        <li><strong>Colaba Causeway:</strong> A bustling street market famous for shopping, dining, and exploring a wide range of goods and souvenirs.</li>
+                        <li><strong>Elephanta Caves:</strong> UNESCO World Heritage Site featuring ancient rock-cut caves dedicated to Lord Shiva, located on Elephanta Island in Mumbai Harbour.</li>
+                        <li><strong>Kamala Nehru Park:</strong> A scenic park situated on Malabar Hill, offering panoramic views of the city skyline and the Arabian Sea.</li>
+                        <li><strong>Crawford Market:</strong> One of Mumbai's oldest markets, renowned for its vibrant atmosphere, diverse goods, and architectural beauty.</li>
+                        <li><strong>Mumbai Zoo (Veermata Jijabai Udyan):</strong> A popular zoological park in Byculla, home to a wide variety of animals and birds, and a favorite spot for families.</li>
+                        <li><strong>Bandra-Worli Sea Link:</strong> An engineering marvel and cable-stayed bridge connecting Bandra and Worli, offering stunning views of the Arabian Sea and Mumbai skyline.</li>
+                    </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.636007859419!2d72.8177031!3d19.123617749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9e2bf7afb8d%3A0x5e9780a57ad5c88f!2sVersova%20Beach!5e0!3m2!1sen!2sin!4v1711696978513!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="versova-beach-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
