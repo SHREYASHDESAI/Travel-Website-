@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIBAUG BEACH</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('alibaugbeachbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Alibaug Beach</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Alibaug Beach is located in the Alibaug region of Maharashtra, India, along the Arabian Sea coastline.</li>
+                    <li><strong>Accessibility:</strong> Easily accessible by road from Mumbai and other major cities in Maharashtra, with regular ferry services available from Mumbai to Alibaug.</li>
+                    <li><strong>Attractions:</strong> Known for its expansive sandy shores, gentle sea waves, and serene ambiance, offering a perfect getaway from the hustle and bustle of city life.</li>
+                    <li><strong>Water Sports:</strong> Offers a range of water sports activities such as swimming, banana boat rides, and parasailing, providing thrilling experiences for adventure enthusiasts.</li>
+                    <li><strong>Kolaba Fort:</strong> Nearby attraction, an ancient sea fort situated in the sea waters near Alibaug Beach, accessible during low tide, offering historical significance and panoramic views of the coastline.</li>
+                    <li><strong>Coastal Walks:</strong> Ideal for leisurely strolls along the shoreline, witnessing stunning sunsets, and enjoying the cool sea breeze, providing a relaxing experience for visitors.</li>
+                    <li><strong>Local Cuisine:</strong> Indulge in delicious seafood delicacies such as fresh fish fry, prawn curry, and crab masala at the beachside shacks and eateries near Alibaug Beach.</li>
+                    <li><strong>Beach Resorts:</strong> Various beach resorts and cottages are available near Alibaug Beach, offering comfortable accommodations with modern amenities for overnight stays.</li>
+                    <li><strong>Beach Parties:</strong> Often hosts beach parties and events during weekends and holidays, featuring music, dance, and bonfires, providing lively entertainment for visitors.</li>
+                    <li><strong>Historical Landmarks:</strong> Explore nearby historical landmarks such as Khanderi Fort, Janjira Fort, and Kanakeshwar Devasthan Temple for a glimpse into the region's rich history and heritage.</li>
+                    <li><strong>Nearby Attractions:</strong> Visit nearby attractions such as Nagaon Beach, Kashid Beach, and Murud-Janjira for a complete coastal experience and exploration of scenic landscapes.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="alibaugbeach-1.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="alibaugbeach-2.jpg" alt="Alibaug Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.thrillophilia.com/watersports-in-alibaug" alt="Alibaug Sports">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                    <li><strong>Kolaba Fort:</strong> An ancient sea fortress situated in the Arabian Sea near Alibaug Beach, accessible by a short boat ride during low tide, offering historical significance and panoramic views of the coastline.</li>
+                    <li><strong>Nagaon Beach:</strong> A scenic beach destination located a short distance from Alibaug Beach, known for its golden sands, gentle sea waves, and water sports activities such as banana boat rides and parasailing.</li>
+                    <li><strong>Kashid Beach:</strong> A pristine beach situated near Alibaug, renowned for its clear blue waters, white sandy shores, and picturesque surroundings, ideal for swimming, sunbathing, and beach picnics.</li>
+                    <li><strong>Murud-Janjira Fort:</strong> A majestic sea fort located near Alibaug, built by the Siddis of Murud during the 17th century, offering historical significance, architectural grandeur, and breathtaking views of the Arabian Sea.</li>
+                    <li><strong>Kanakeshwar Devasthan Temple:</strong> A revered Hindu temple dedicated to Lord Shiva, situated atop a hill near Alibaug, accessible via a flight of stairs, known for its spiritual ambiance and panoramic views of the surrounding landscapes.</li>
+                    <li><strong>Varsoli Beach:</strong> A serene beach destination located near Alibaug, offering a peaceful ambiance, gentle sea breeze, and stunning views of the sunset, perfect for relaxation and leisurely walks along the shore.</li>
+                    <li><strong>Khanderi Fort:</strong> A historic sea fort situated near Alibaug Beach, accessible by boat, known for its strategic location and architectural ruins, providing insights into the region's maritime history and heritage.</li>
+                    <li><strong>Revdanda Beach:</strong> A tranquil beach located near Alibaug, known for its quiet surroundings, scenic beauty, and historical landmarks such as the Revdanda Fort and St. Francis Xavier's Church.</li>
+                    <li><strong>Brahma Kund:</strong> A sacred water tank located in the vicinity of Alibaug, believed to have been built during the time of the Pandavas, known for its religious significance and annual festivals celebrated by devotees.</li>
+                    <li><strong>Mandwa Beach:</strong> A popular beach destination near Alibaug, accessible by ferry from Mumbai, known for its pristine shoreline, water sports activities, and beachside resorts offering luxurious accommodations.</li>
+                </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.5535010305007!2d72.86944647519454!3d18.63914218247751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87a3bbaac97ef%3A0x5a84bb4da54dafae!2sAlibaug%20Beach!5e0!3m2!1sen!2sin!4v1711725186070!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="alibaugbeachvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
