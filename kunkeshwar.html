@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUNKESHWAR BEACH</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('kunkeshwarbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Kunkeshwar Beach</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Kunkeshwar Beach is located in Kunkeshwar village in the Sindhudurg district of Maharashtra, India.</li>
+                    <li><strong>Accessibility:</strong> Easily accessible by road from major cities in Maharashtra, with the nearest railway station being at Kankavli.</li>
+                    <li><strong>Attractions:</strong> Known for its pristine sandy beach, calm waters, and tranquil atmosphere, ideal for relaxation and leisure.</li>
+                    <li><strong>Kunkeshwar Temple:</strong> Adjacent to the beach is the Kunkeshwar Temple, a beautiful temple dedicated to Lord Shiva, known for its architectural grandeur and religious significance.</li>
+                    <li><strong>Scenic Beauty:</strong> Surrounded by lush greenery and coconut palms, offering a picturesque setting for nature lovers and photographers.</li>
+                    <li><strong>Fishing Activities:</strong> The beach is a hub for fishing activities, allowing visitors to witness the traditional fishing techniques practiced by the local fishing community.</li>
+                    <li><strong>Cultural Heritage:</strong> Experience the rich cultural heritage of the region through its traditional music, dance, and festivals celebrated at the Kunkeshwar Temple.</li>
+                    <li><strong>Nature Trails:</strong> Explore nearby nature trails and trekking routes that lead to scenic viewpoints offering panoramic views of the Arabian Sea and surrounding landscapes.</li>
+                    <li><strong>Accommodation:</strong> Limited accommodation options are available near Kunkeshwar Beach, including homestays and guesthouses, offering a comfortable stay experience.</li>
+                    <li><strong>Nearby Attractions:</strong> Visit nearby attractions such as Devgad Beach, Vijaydurg Fort, and Malvan for a complete coastal experience and exploration of historical landmarks.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="kunkeshwarbeach-2.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="kunkeshwarbeach-1.jpg" alt="Malvan Beach" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.seawatersports.com/places/maharashtra/kunkeshwar" alt="Malvan Sports">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                    <li><strong>Kunkeshwar Temple:</strong> A beautiful temple dedicated to Lord Shiva, located adjacent to Kunkeshwar Beach, known for its architectural grandeur and religious significance.</li>
+                    <li><strong>Devgad Beach:</strong> A pristine beach located near Kunkeshwar, offering scenic views, water sports activities, and a peaceful ambiance for relaxation.</li>
+                    <li><strong>Vijaydurg Fort:</strong> A historic sea fortress located near Kunkeshwar, built during the Maratha Empire, offering insights into the region's rich maritime history and panoramic views of the Arabian Sea.</li>
+                    <li><strong>Malvan:</strong> A quaint town known for its historical significance, delicious Malvani cuisine, and vibrant culture, located a short distance from Kunkeshwar Beach.</li>
+                    <li><strong>Rameshwar Temple:</strong> A revered temple dedicated to Lord Shiva, located in Achara village near Kunkeshwar, known for its ancient architecture and religious importance.</li>
+                    <li><strong>Achara Beach:</strong> A serene and less crowded beach destination near Kunkeshwar, ideal for swimming, sunbathing, and enjoying leisurely walks along the shore.</li>
+                    <li><strong>Tambaldeg Beach:</strong> A secluded beach located near Kunkeshwar, offering a tranquil ambiance and breathtaking views of the sunset, perfect for a peaceful retreat.</li>
+                    <li><strong>Shiroda Velagar Beach:</strong> A picturesque beach located near Kunkeshwar, known for its golden sands, clear blue waters, and lush coconut groves, providing a scenic backdrop for relaxation and photography.</li>
+                    <li><strong>Kalavli Beach:</strong> A hidden gem near Kunkeshwar, characterized by its pristine shoreline, rocky outcrops, and secluded coves, ideal for nature lovers and solitude seekers.</li>
+                    <li><strong>Kankavli:</strong> A nearby town known for its cultural heritage, educational institutions, and historical landmarks, offering various amenities and attractions for visitors.</li>
+                </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.837311220465!2d73.3934651!3d16.3312549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bea9ea1fa1ed6ef%3A0x78eef975b764fe30!2sKunkeshwar%20Beach!5e0!3m2!1sen!2sin!4v1711722680449!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="kunkeshwarbeachvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
