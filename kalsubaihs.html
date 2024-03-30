@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALSUBAI</title>
+    <style>
+        /* Style to display images side by side */
+        .image-container {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            margin-left: 100px;
+        }
+        .image-container img {
+            margin-right: 20px; /* Add margin to the right of each image */
+            border: 5px solid black; /* Add border to each image */
+        }
+        .image-container img:last-child {
+            margin-left: 50px;
+            margin-top: 100px; /* Add margin to the top of the second image */
+        }
+        @keyframes Animation-image-map {
+            0%{
+                left: -200px;
+                opacity: 0;
+            }
+            100%{
+                left: 20px;
+                opacity: 1;
+            }
+        }
+        @keyframes Animation-side-image {
+            0%{
+                right: -200px;
+                opacity: 0;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .sec-class{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-side-image 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .sec-class:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .imag-map {
+            
+            position:relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: Animation-image-map 3s ease-out 0.5s ;
+            margin: 5px;
+        }
+        .imag-map:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 1s;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            margin-top: 100px;
+            margin-right: 300px;
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* 3D text effect */
+        .title h1 {
+            font-size: 60px;
+            color: #007bff;
+            text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Space items evenly */
+            align-items: flex-start; /* Align items at the start */
+            margin: 0 auto; /* Center container */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px; /* Add padding */
+        }
+        /* Text container */
+        .text-container {
+            flex: 1;
+            max-width: 600px; /* Adjust width as needed */
+            margin-right: 20px; /* Add margin to separate from map */
+        }
+        .text-container h3 {
+            color: rgb(13, 13, 13);
+        }
+        /* Map iframe */
+        .map-iframe {
+            flex: 1;
+            width: 200px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('kalsubaibg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Container for centered image -->
+    <div class="title">
+        <h1>Kalsubai</h1>
+    </div>
+    <hr>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Text content -->
+        <div class="text-container">
+            <h3>
+                <ul>
+                    <li><strong>Location:</strong> Kalsubai is the highest peak in the Western Ghats of Maharashtra, India, located in the Ahmednagar district.</li>
+                    <li><strong>Elevation:</strong> Standing at an elevation of 1,646 meters (5,400 feet) above sea level, Kalsubai is the highest point in Maharashtra.</li>
+                    <li><strong>Trekking:</strong> The trek to Kalsubai summit is a popular adventure activity for trekkers and nature enthusiasts, offering breathtaking views of the surrounding Sahyadri mountain range and valleys.</li>
+                    <li><strong>Difficulty:</strong> While the trek to Kalsubai is considered moderate in difficulty, it involves steep ascents, rocky terrain, and narrow pathways, requiring physical fitness and proper trekking gear.</li>
+                    <li><strong>Trail:</strong> The trek to Kalsubai usually starts from the base village of Bari, leading through dense forests, open meadows, and rocky patches, with well-marked trails and signposts along the way.</li>
+                    <li><strong>Temple:</strong> At the summit of Kalsubai, there is a small temple dedicated to Goddess Kalsubai, which is visited by pilgrims and trekkers who seek blessings and offer prayers.</li>
+                    <li><strong>Weather:</strong> The weather at Kalsubai can vary significantly throughout the year, with pleasant temperatures during the winter months (November to February) and monsoon rains from June to September, making trekking conditions challenging.</li>
+                    <li><strong>Sunrise:</strong> Watching the sunrise from the summit of Kalsubai is a mesmerizing experience, offering panoramic views of the surrounding landscapes bathed in golden hues.</li>
+                    <li><strong>Camping:</strong> Camping is allowed near the base village of Bari and along the trekking route to Kalsubai summit, providing overnight accommodation options for trekkers who wish to experience the tranquility of the mountains.</li>
+                    <li><strong>Safety:</strong> It is essential for trekkers to exercise caution, stay hydrated, and follow safety guidelines while trekking to Kalsubai, including carrying sufficient water, wearing appropriate footwear, and avoiding trekking during adverse weather conditions.</li>
+                </ul>
+                <p>Remember to check the weather conditions and tide timings before planning your visit for a safe and enjoyable experience.</p>
+            </h3>
+        </div>
+        <!-- Second Image -->
+        <div class="image-container">
+            <div class="sec-class">
+                <img src="kalsubaiphoto_1.jpg" alt="Second Image" width="400" height="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Container for images and text -->
+    <div class="image-container">
+        <!-- First Image with Image Mapping -->
+        <div class="imag-map">
+            <img src="kalsubaiphoto_2.jpg" alt="Kalsubai trek" width="400" height="250" usemap="#image-map">
+            <map name="image-map">
+                <!-- Define image mapping areas -->
+                <area shape="rect" coords="0,0,400,300" href="https://www.treksandtrails.org/tours/kalsubai-trek-highest-peak-of-maharashtra" alt="Kalsubai trek">
+            </map>
+        </div>
+        <!-- Text Container -->
+        <div class="text-container">
+            <center>
+                <h1 style="color:rgb(255, 0, 0);">Major Attraction:</h1>
+                <ol type="1" style="color:rgb(79, 32, 208); text-align: center;">
+                    <li><strong>Bhandardara:</strong> Bhandardara is a popular hill station and tourist destination located near Kalsubai. It is known for its serene ambiance, lush greenery, and attractions such as the Arthur Lake, Randha Falls, and Wilson Dam.</li>
+                    <li><strong>Ratangad Fort:</strong> Ratangad Fort is an ancient hill fort situated in the Ratan Wadi region near Kalsubai. It offers panoramic views of the Sahyadri mountain range and is a favorite trekking destination for adventure enthusiasts.</li>
+                    <li><strong>Harishchandragad:</strong> Harishchandragad is a historic hill fort located near Kalsubai, known for its rugged terrain, ancient caves, and temples. It is a popular trekking destination and offers breathtaking views of the surrounding valleys.</li>
+                    <li><strong>Sandhan Valley:</strong> Sandhan Valley, also known as the Valley of Shadows, is a picturesque canyon located near Kalsubai. It is famous for its narrow gorge, towering cliffs, and adventurous trekking and rappelling experiences.</li>
+                    <li><strong>Amruteshwar Temple:</strong> Amruteshwar Temple is an ancient Shiva temple located near Kalsubai, known for its intricate architecture and religious significance. It is situated in the village of Ratanwadi and is a popular pilgrimage site.</li>
+                    <li><strong>Kokan Kada:</strong> Kokan Kada is a breathtaking cliff edge located near Kalsubai, offering panoramic views of the Konkan region and the surrounding valleys. It is a popular spot for photography and adventure activities.</li>
+                    <li><strong>Kalsubai Wildlife Sanctuary:</strong> Kalsubai Wildlife Sanctuary is a protected area located near Kalsubai, known for its diverse flora and fauna. It is home to species such as leopards, barking deer, and various bird species, making it ideal for wildlife enthusiasts.</li>
+                    <li><strong>Igatpuri:</strong> Igatpuri is a hill station and town located near Kalsubai, known for its scenic beauty, waterfalls, and trekking trails. It is a gateway to attractions such as the Tringalwadi Fort, Vaitarna Dam, and Camel Valley.</li>
+                    <li><strong>Saptashrungi Devi Temple:</strong> Saptashrungi Devi Temple is a Hindu temple located near Kalsubai, dedicated to the goddess Saptashrungi. It is situated atop a hill and is accessible via a flight of stairs or a ropeway, offering stunning views of the surrounding landscape.</li>
+                    <li><strong>Wilson Dam:</strong> Wilson Dam is a gravity dam located near Kalsubai, built on the Pravara River. It is one of the oldest dams in India and offers picturesque views of the reservoir and surrounding hills.</li>
+                </ol>
+            </center>
+        </div>
+        
+        <!-- Second Image -->
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30068.875373322215!2d73.68855217037282!3d19.6012269797026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd9da29a349bb1%3A0xd763db58ee98a373!2sKalsubai%20Peak!5e0!3m2!1sen!2sin!4v1711794287321!5m2!1sen!2sin"></iframe>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video controls>
+          <source src="kalsubai_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+</html>
